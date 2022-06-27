@@ -58,8 +58,8 @@ void setup()
 void loop()
 {
   handleSerial();
-	Corrector();
-}
+	int pos = myservo.read();
+	}
 
 void handleSerial()
 {
@@ -247,8 +247,8 @@ void SetShutter(int val)
 }
 
 
-void Corrector(myservo.read()){
-	if (myservo.read != abierto && myservo.read != cerrado) {
+void Corrector(int pos){
+	if (pos != abierto && pos != cerrado) {
 		myservo.write(cerrado);
     coverStatus = CLOSED;
 	}
