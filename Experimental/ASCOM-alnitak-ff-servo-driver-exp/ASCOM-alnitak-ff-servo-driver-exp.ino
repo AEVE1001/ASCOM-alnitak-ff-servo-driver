@@ -58,6 +58,7 @@ void setup()
 void loop()
 {
   handleSerial();
+	Corrector();
 }
 
 void handleSerial()
