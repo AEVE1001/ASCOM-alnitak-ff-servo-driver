@@ -1,17 +1,14 @@
 //Código Experimental. No usar en producción.
 
 
-//Código Experimental. No usar en producción.
-
-
 #include <Servo.h>
 
-Servo servoA;
+Servo myservo;
 
-int pos = 0
+int pos = 0;
 
 void setup(){
-    servoA.attach(9);
+    myservo.attach(9);
 }
 
 void loop() {
@@ -25,3 +22,5 @@ void loop() {
         delay(15);
     }
 }
+
+//FUNCIONA.
